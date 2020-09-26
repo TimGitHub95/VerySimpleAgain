@@ -1,0 +1,16 @@
+Hours = input("Please Input the number of hours here:")
+Rate = input("Please input your rate of pay here:")
+try:
+    TryHours = float(Hours)
+    TryRate = float(Rate)
+except:
+    print("Error: please enter numeric input")
+    quit()
+
+if int(TryHours) > 40:
+    sum = float(TryHours) * 1.5
+else:
+    sum = float(TryHours) * 0.0
+
+Pay = int(TryHours) * int(Rate)
+print("Your pay is:", Pay + sum)
