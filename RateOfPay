@@ -1,0 +1,4 @@
+Hours = input("Hello Sir, Please put your hours in here: ")
+Rate = input("Hello Sir, please put your rate of pay in here: ")
+Pay = int(Hours) * float(Rate)
+print("Pay:", Pay)
