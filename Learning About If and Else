@@ -1,0 +1,9 @@
+Hours = input("Please Input the number of hours here:")
+Rate = input("Please input your rate of pay here:")
+if int(Hours) > 40:
+    sum = float(Hours) * 1.5
+else:
+    sum = float(Hours) * 0.0
+
+Pay = int(Hours) * int(Rate)
+print("Your pay is:", Pay + sum)
