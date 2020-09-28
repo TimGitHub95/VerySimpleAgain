@@ -1,0 +1,30 @@
+#Greeting
+dne = input("Please type 'Begin' when ready: ")
+#Inputting Number
+num = 0
+tot = 0.0
+while True:
+    print("")
+    x = input("Please enter your number here: ")
+    if x == 'Done':
+        break
+    print("")
+    try:
+        Good = float(x)
+    except:
+        print("This is incorrect, please input a number: ")
+    y = float(x)
+    if float(x) > 0:
+        print("Congratulations", y, "is a number")
+        print("")
+        num = num + 1
+        tot = tot + y
+        avg = tot / num
+        print("Here are your stats:""\n")
+        print("Number of attempts:", num)
+        print("")
+        print("Total of the numbers:", tot)
+        print("")
+        print("Here is the average:", avg)
+    else:
+        print("Please try with a positive number")
